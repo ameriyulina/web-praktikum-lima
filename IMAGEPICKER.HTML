@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+
+<body style="margin: 200px;">
+
+    <select id="kumpulanGambarBuah" onchange="changeGambar()">
+        <option value="https://upload.wikimedia.org/wikipedia/commons/2/2f/Culinary_fruits_front_view.jpg">Pilih Buah</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/b/b6/3_Bananas.jpg">Pisang</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/c/c1/Fuji_apple.jpg">Apel</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/7/7a/Ananas~May_2008-1.jpg">Nanas</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/b/bb/Table_grapes_on_white.jpg">Anggur</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/4/40/Watermelons.jpg">Semangka</option>
+    </select>
+
+    <br />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Culinary_fruits_front_view.jpg" alt="gambar" id="gambar" style="width: 100%;">
+    <script type="text/javascript">
+        function changeGambar() {
+            let gambar = document.getElementById("kumpulanGambarBuah").value;
+            document.getElementById("gambar").src = gambar;
+        }
+    </script>
+
+</body>
+
+</html>
